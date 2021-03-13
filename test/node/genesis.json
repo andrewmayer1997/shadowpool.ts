@@ -1,0 +1,24 @@
+{
+  "config": {
+    "chainId": 15,
+    "homesteadBlock": 0,
+    "eip150Block": 0,
+    "eip155Block": 0,
+    "eip158Block": 0,
+    "byzantiumBlock": 0,
+    "constantinopleBlock": 0,
+    "petersburgBlock": 0,
+    "ethash": {}
+  },
+  "difficulty": "0x400",
+  "nonce": "0x0000000000000042",
+  "mixhash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+  "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+  "timestamp": "0x00",
+  "gasLimit": "0x2fefd8",
+  "extradata": "",
+  "alloc": {
+    "b8d84c5501dda92a02374caf9998294539a50a0e": { "balance": "0" },
+    "e8C39F2c8364530A794a457fE29F1F7d855Af769": { "balance": "0" }
+  }
+}

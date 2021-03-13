@@ -1,0 +1,33 @@
+{
+  "scripts": {
+    "build": "webpack",
+    "build-all": "yarn install; yarn build; yarn geth-build",
+    "geth-build": "scripts/patching_geth.sh",
+    "start": "scripts/start_pool.sh",
+    "start-view": "node dist/shadow.js",
+    "stop": "killall node",
+    "view": "tree -L 4 -I 'node_modules|build|third-party'",
+    "geth-test": "cd test/node; start_geth_test.sh",
+    "geth-prod": "scripts/start_geth.sh",
+    "testnet": "scripts/testnet.sh",
+    "watch": "scripts/start_watch.sh"
+  },
+  "dependencies": {
+    "@types/node": "^14.14.31",
+    "web3": "^1.3.0-rc.0"
+  },
+  "devDependencies": {
+    "@types/node-telegram-bot-api": "^0.51.1",
+    "@types/ws": "^7.4.0",
+    "awesome-typescript-loader": "^5.2.1",
+    "node-telegram-bot-api": "^0.51.0",
+    "ts-loader": "^8.0.17",
+    "tslog": "^3.1.0",
+    "typescript": "^4.2.0-dev.20210126",
+    "webpack": "^5.24.2",
+    "webpack-cli": "^4.5.0",
+    "webpack-node-externals": "^2.5.2",
+    "websocket": "^1.0.33",
+    "ws": "^7.4.3"
+  }
+}
